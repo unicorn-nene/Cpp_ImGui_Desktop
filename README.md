@@ -42,10 +42,10 @@ ImPlot Integration:
  - Ready for visualizing real-time or statistical data
    
 Technical Highlights:
-  Written in Modern C++20, using <filesystem>, constexpr, and RAII
-  Uses SimpleIni for lightweight configuration serialization
-  Demonstrates clean separation of logic and rendering pipeline
-  Can serve as a base for future C++ desktop applications or ImGui tools
+ - Written in Modern C++20, using <filesystem>, constexpr, and RAII
+ - Uses SimpleIni for lightweight configuration serialization
+ - Demonstrates clean separation of logic and rendering pipeline
+ - Can serve as a base for future C++ desktop applications or ImGui tools
 
 
 
@@ -72,7 +72,7 @@ ImPlot 图表支持:
  - 适合展示实时数据或统计图形
 
 技术亮点
- 完全基于 现代 C++20（使用 constexpr、filesystem 等标准特性）
- 使用 SimpleIni 实现轻量配置存储
- 清晰分层：界面逻辑与渲染框架解耦
- 可扩展为任意 桌面工具或 GUI 编辑器
+ -  完全基于 现代 C++20（使用 constexpr、filesystem 等标准特性）
+ - 使用 SimpleIni 实现轻量配置存储
+ - 清晰分层：界面逻辑与渲染框架解耦
+ - 可扩展为任意 桌面工具或 GUI 编辑器
