@@ -29,12 +29,15 @@ Customizable Theme System:
  - Real-time adjustment of ImGui styles (padding, rounding, spacing, etc.)
  - Full color editor for all ImGui elements
  - Theme persistence via .ini configuration
+   
 Robust Rendering Framework:
  - Built with GLFW + OpenGL 3
  - Frame cycle abstraction (start_cycle / end_cycle)
+   
 Modular C++ Design:
  - WindowBase encapsulates UI logic and configuration persistence
  - Desktop provides the application entry point and render control
+   
 ImPlot Integration:
  - Ready for visualizing real-time or statistical data
    
@@ -56,12 +59,15 @@ Technical Highlights:
  - 实时修改 ImGui 样式参数（Padding / Rounding / Spacing 等）
  - 可视化颜色编辑器，支持所有控件配色
  - 自动保存与加载 .ini 配置
+   
 完善的渲染架构:
  - 使用 GLFW + OpenGL 3
  - 独立的渲染周期函数：start_cycle() / end_cycle()
+   
 模块化 C++ 设计:
  - WindowBase 负责主题管理与界面逻辑
  - Desktop 负责程序入口与渲染主循环
+   
 ImPlot 图表支持:
  - 适合展示实时数据或统计图形
 
