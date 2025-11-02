@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/bitmap.dir/main.cpp.o -o bitmap  libBitmap_Library.a 

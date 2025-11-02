@@ -1,0 +1,4 @@
+/mnt/e/c_plus_plus/C++ OpenGL/Getpixmap/build/CMakeFiles/Bitmap_Library.dir
+/mnt/e/c_plus_plus/C++ OpenGL/Getpixmap/build/CMakeFiles/bitmap.dir
+/mnt/e/c_plus_plus/C++ OpenGL/Getpixmap/build/CMakeFiles/edit_cache.dir
+/mnt/e/c_plus_plus/C++ OpenGL/Getpixmap/build/CMakeFiles/rebuild_cache.dir

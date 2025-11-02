@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBitmap_Library.a CMakeFiles/Bitmap_Library.dir/Bitmap.cpp.o CMakeFiles/Bitmap_Library.dir/Mandelbrot.cpp.o CMakeFiles/Bitmap_Library.dir/ZoomList.cpp.o CMakeFiles/Bitmap_Library.dir/FractalCreator.cpp.o CMakeFiles/Bitmap_Library.dir/RGB.cpp.o
+/usr/bin/ranlib libBitmap_Library.a
