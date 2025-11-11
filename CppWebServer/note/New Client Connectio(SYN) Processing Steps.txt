@@ -1,0 +1,15 @@
+Steps: When new Client is Connected
+
+1. User appln is started, it calls TcpServerController();
+2. All Services are initialized, but not yet running
+3. Application calls, TcpServerController()->Start()
+4. All Services threads are started, TCPServer is ready.
+5. C1 sends SYN to TCP Server(CAS)
+6. CAS accepts a new connection and create TcpClient Object
+7. CAS sends notifocation to application directly for new connection
+8. CAS request controller to ProessNewClient Object.
+9. Controller submits the AddClientToDB Request to DBMS
+10. DBMS store the new TcpCilent object in DB
+11. Controller the asks DRS to start listen for this new Client Object ClientFDStartListen
+12. DRS stores the copy of Client Object in its own local DB and start listening for new 
+	data request for this new Client ( along with other already connected clients)

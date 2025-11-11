@@ -1,0 +1,13 @@
+Client Data Request Service (DRS)
+
+- DRS Service is responsible for receiving messages from connected client and handover them to appln for processing.
+
+- DRS service implements select()/epoll() in a DRS thread.
+
+- DRS thread is blocked on select(), and unblocked as soon as msg is recvd from any client.
+
+- DRS is also called as [TCP Client Service Manager]
+
+- Like CAS thread, DRS thread is also started when TCPController Starts.
+
+- DRS maintains a separate copy of client database, A client Object is added to it by TCPController(new slide)/

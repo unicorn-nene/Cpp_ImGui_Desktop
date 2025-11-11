@@ -1,0 +1,10 @@
+Thress Steps:
+
+1.Define Fn pointer as members of TcpServerController class.
+2.Application create callback fns register with TcpServerController.
+3.CAS invokes the Appl's callback fn when Client connects to it.
+
+fn(function):
+client_connected
+client_disconnected (later)
+client_msg_recvd (later)
