@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/mnt/e/c_plus_plus/cpp_socket_programming_Posix/Course",
-      "program": "/mnt/e/c_plus_plus/cpp_socket_programming_Posix/Course/build/Debug/outDebug",
+      "cwd": "/mnt/e/c_plus_plus/cpp_socket_programming_Posix/TCPIP_server",
+      "program": "/mnt/e/c_plus_plus/cpp_socket_programming_Posix/TCPIP_server/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

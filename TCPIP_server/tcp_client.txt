@@ -1,0 +1,40 @@
+STEP2:
+client wants to send data to server process which is running on server machine, and listening on port on DEST_PORT,
+server IP address SERVER_IP_ADDRESS.
+Inform client about which server to sene data to: All we need is port number, and server ip address.
+Pls note that:
+there can be many process running in the server listening on different no of ports,
+out client is interested in sending data to server process which is listening on PORT = DEST_PORT
+
+UDP:
+//客户端(发送端),创建一个socket文件描述符,参数使用tcp协议, 填写服务器(接收端, 目的地)的ip_addr和port(IP地址和端口)的 sockaddr 结构体,
+ 调用 sendto()函数使用填写的sockaddr结构作为参数 发送数据. 
+ // 服务器(接收端)也是, 创建一个tcp协议参数的socket文件描述符, 填写客户端(发送端)的ip_addr和port(IP地址和端口)的sockaddr结构体
+ 调用 recvfrom()函数, 使用sockaddr结构体和准备好的缓冲区作为参数接受信息. 
+
+TCP:
+ tcp需要前提准备, 发送端调用connect()创建连接, 接收端使用listen()监听连接. 连接成功/监听成功之后, 就可以使用send()发送和recv()无限次接受
+
+ 发送端                     接收端
+ 
+-------------------------------------- 准备工作
+--------------------------------------
+ socket()                   socket()
+                            bind()
+                            listen()
+--------------------------------------- 三次握手
+---------------------------------------
+connect() ----------------> (收到SYN)            - 第一次挥手
+(wait handshake)            自动回复(SYN+ACK)     - 第二次挥手
+                            (等待ACK)
+(收到 SYN+ACK)              
+send ACK ------------------>                     - 第三次挥手
+(connect() 返回成功)        (accept()返回新fd)
+----------------------------------------
+---------------------------------------- 开始发送消息
+
+ send()                     recv()
+先是客服端使用connect()发送第一个次挥手, 
+服务器(接收端)由于一般处于(设置好)监听状态, 会自动返回第二次握手,
+然后此时connect() 会发起第三次挥手. 
+传送成功后 connect()返回成功, accept()此时也返回成功.此时三次挥手完成
