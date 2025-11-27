@@ -1,0 +1,11 @@
+#pragma once
+#include <string>
+
+std::string GetResoureDir()
+{
+#ifdef NOBUG // release build
+    return "@RESOURCE_FOLDER_NAME@/";
+#else
+    return "@RESOURCE_SRC_DIR@/";
+#endif
+}

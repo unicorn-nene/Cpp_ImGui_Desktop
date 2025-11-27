@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/LightYearsEngine/include",
+                "${workspaceFolder}/LightYearsGame/include",
+                "C:/MinGW/MinGW-8.5.0/include",
+                "C:/MinGW/MinGW-8.5.0/lib/gcc/x86_64-w64-mingw32/8.5.0/include",
+                "C:/MinGW/MinGW-8.5.0/x86_64-w64-mingw32/include",
+                "${workspaceFolder}/build/_deps/sfml-src/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/MinGW/MinGW-8.5.0/bin/g++.exe",
+            "intelliSenseMode": "gcc-x86",
+            "cStandard": "c11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}
